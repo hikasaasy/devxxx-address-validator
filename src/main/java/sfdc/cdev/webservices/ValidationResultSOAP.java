@@ -12,25 +12,21 @@ import javax.xml.bind.annotation.XmlAccessType;
 public class ValidationResultSOAP implements IValidationResult {
 	private ValidationResult vr;
 
-	@Override
 	@XmlElement
 	public List<Difference> getDifferences() {
 		return vr.getDifferences();
 	}
 
-	@Override
 	@XmlElement
 	public Boolean getIsValid() {
 		return vr.getIsValid();
 	}
 
-	@Override
 	@XmlElement
 	public AddressSOAP getValidAddress() {
 		return new AddressSOAP(vr.getValidAddress());
 	}
 
-	@Override
 	@XmlElement
 	public AddressSOAP getTestAddress() {
 		return new AddressSOAP(vr.getTestAddress());

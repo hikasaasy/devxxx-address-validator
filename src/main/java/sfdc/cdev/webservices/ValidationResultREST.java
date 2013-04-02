@@ -11,22 +11,18 @@ import javax.xml.bind.annotation.XmlAccessType;
 public class ValidationResultREST implements IValidationResult {
 	private ValidationResult vr;
 
-	@Override
 	public List<Difference> getDifferences() {
 		return vr.getDifferences();
 	}
 
-	@Override
 	public Boolean getIsValid() {
 		return vr.getIsValid();
 	}
 
-	@Override
 	public IAddress getValidAddress() {
 		return new AddressREST(vr.getValidAddress());
 	}
 
-	@Override
 	public IAddress getTestAddress() {
 		return  new AddressREST(vr.getTestAddress());
 	}

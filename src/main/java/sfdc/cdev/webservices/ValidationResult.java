@@ -5,12 +5,10 @@ import java.util.List;
 
 public class ValidationResult implements IValidationResult {
 	// IValidationResult	
-	@Override
 	public Boolean getIsValid() {
 		return isValid;
 	}
 	
-	@Override
 	public Address getValidAddress() {
 		Address validAddress = new Address();
 		
@@ -24,16 +22,13 @@ public class ValidationResult implements IValidationResult {
 		return validAddress;
 	}
 	
-	@Override
 	public IAddress getTestAddress() {
 		return testAddress;
 	}
 	
-	@Override
 	public List<Difference> getDifferences() {
 		return differences;
 	}
-
 
 	// private variables
 	private IAddress testAddress;

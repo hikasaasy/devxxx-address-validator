@@ -58,6 +58,7 @@
 	</dependencies>
 
 	<!-- Local Apache -->
+	<!--
 	<build>
 		<plugins>
 			<plugin>
@@ -96,4 +97,5 @@
 			</plugin>
 		</plugins>
 	</build>
+	-->
 </project>
