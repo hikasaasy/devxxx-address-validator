@@ -41,13 +41,7 @@
 			<artifactId>resteasy-jackson-provider</artifactId>
 			<version>2.2.1.GA</version>
 		</dependency>
-		<dependency>
-			<groupId>com.github.jsimone</groupId>
-			<artifactId>webapp-runner</artifactId>
-			<version>7.0.22.3</version>
-			<scope>provided</scope>
-		</dependency>
-
+ 
 		<!-- Apache -->
 		<dependency>
 			<groupId>com.github.jsimone</groupId>
@@ -58,7 +52,6 @@
 	</dependencies>
 
 	<!-- Local Apache -->
-	<!--
 	<build>
 		<plugins>
 			<plugin>
@@ -97,5 +90,4 @@
 			</plugin>
 		</plugins>
 	</build>
-	-->
 </project>
