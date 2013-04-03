@@ -60,7 +60,7 @@ public class ValidationResult implements IValidationResult {
 	private Boolean validatePart(String fieldName, String testValue, String validValue) {
 		Boolean isValidPart = true;
 		
-		if (!testValue.equalsIgnoreCase(validValue)) {
+		if ((testValue == null) || (!testValue.equalsIgnoreCase(validValue))) {
 			isValidPart = false;
 			differences.add(new Difference(fieldName, validValue, testValue));
 		}
