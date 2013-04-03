@@ -12,48 +12,48 @@ public class Address implements IAddress {
 		return line1;
 	}
 
-	public void setLine1(String line1) {
-		this.line1 = line1.trim();
+	public void setLine1(String value) {
+		this.line1 = (value == null) ? null : value.trim();
 	}
 
 	public String getLine2() {
 		return line2;
 	}
 
-	public void setLine2(String line2) {
-		this.line2 = line2.trim();
+	public void setLine2(String value) {
+		this.line2 = (value == null) ? null : value.trim();
 	}
 
 	public String getCity() {
 		return city;
 	}
 
-	public void setCity(String city) {
-		this.city = city.trim();
+	public void setCity(String value) {
+		this.city = (value == null) ? null : value.trim();
 	}
 
 	public String getState() {
 		return state;
 	}
 
-	public void setState(String state) {
-		this.state = state.trim();
+	public void setState(String value) {
+		this.state = (value == null) ? null : value.trim();
 	}
 
 	public String getZipCode() {
 		return zipCode;
 	}
 
-	public void setZipCode(String zipCode) {
-		this.zipCode = zipCode.trim();
+	public void setZipCode(String value) {
+		this.zipCode = (value == null) ? null : value.trim();
 	}
 
 	public String getCountry() {
 		return country;
 	}
 
-	public void setCountry(String country) {
-		this.country = country.trim();
+	public void setCountry(String value) {
+		this.country = (value == null) ? null : value.trim();
 	}
 
 	public String getHTML() {
