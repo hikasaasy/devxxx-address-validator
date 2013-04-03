@@ -1,6 +1,7 @@
 package com.salesforce.cdev.webservices.SOAP;
 
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlAccessType;
 
@@ -37,6 +38,11 @@ public class AddressSOAP implements IAddress {
 		return address.getCountry();
 	}
 
+	public String getId() {
+		return address.getId();
+	}
+	
+	@XmlElement
 	public String getHTML() {
 		return address.getHTML();
 	}
@@ -64,6 +70,10 @@ public class AddressSOAP implements IAddress {
 
 	public void setCountry(String value) {
 		address.setCountry(value);
+	}
+	
+	public void setId(String value) {
+		address.setId(value);
 	}
 	
 	// Constructors

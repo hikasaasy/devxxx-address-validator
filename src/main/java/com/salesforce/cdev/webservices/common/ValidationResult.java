@@ -13,6 +13,7 @@ public class ValidationResult implements IValidationResult {
 		Address validAddress = new Address();
 		
 		validAddress = new Address();
+		validAddress.setId("Salesforce.com HQ");
 		validAddress.setLine1("One Market");
 		validAddress.setLine2("Suite 300");
 		validAddress.setCity("San Francisco");

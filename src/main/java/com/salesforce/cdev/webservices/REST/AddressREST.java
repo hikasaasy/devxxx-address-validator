@@ -30,6 +30,10 @@ public class AddressREST implements IAddress {
 	public String getCountry() {
 		return address.getCountry();
 	}
+	
+	public String getId() {
+		return address.getId();
+	}
 
 	public String getHTML() {
 		return address.getHTML();
@@ -59,7 +63,11 @@ public class AddressREST implements IAddress {
 	public void setCountry(String value) {
 		address.setCountry(value);
 	}
-	
+
+	public void setId(String value) {
+		address.setId(value);
+	}
+
 	// Constructors
 	public AddressREST() {
 		super();
@@ -69,4 +77,6 @@ public class AddressREST implements IAddress {
 		super();
 		this.address = address;
 	}
+
+
 }

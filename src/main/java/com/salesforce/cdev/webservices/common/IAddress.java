@@ -13,5 +13,7 @@ public interface IAddress {
 	public void setZipCode(String zipCode);
 	public String getCountry();
 	public void setCountry(String country);
+	public String getId();
+	public void setId(String ID);
 	public String getHTML();
 }

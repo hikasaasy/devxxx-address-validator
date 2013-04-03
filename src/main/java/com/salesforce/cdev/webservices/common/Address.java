@@ -1,6 +1,7 @@
 package com.salesforce.cdev.webservices.common;
 
 public class Address implements IAddress {
+	private String id;
 	private String line1;
 	private String line2;
 	private String city;
@@ -56,6 +57,14 @@ public class Address implements IAddress {
 		this.country = (value == null) ? null : value.trim();
 	}
 
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String value) {
+		this.id = value;
+		
+	}
 	public String getHTML() {
 		String out = "";
 		
