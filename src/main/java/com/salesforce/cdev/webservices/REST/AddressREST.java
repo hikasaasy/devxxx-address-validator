@@ -1,4 +1,7 @@
-package sfdc.cdev.webservices;
+package com.salesforce.cdev.webservices.REST;
+
+import com.salesforce.cdev.webservices.common.Address;
+import com.salesforce.cdev.webservices.common.IAddress;
 
 public class AddressREST implements IAddress {
 	private IAddress address;

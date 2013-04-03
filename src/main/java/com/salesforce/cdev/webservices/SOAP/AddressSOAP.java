@@ -1,8 +1,11 @@
-package sfdc.cdev.webservices;
+package com.salesforce.cdev.webservices.SOAP;
 
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlAccessType;
+
+import com.salesforce.cdev.webservices.common.Address;
+import com.salesforce.cdev.webservices.common.IAddress;
 
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.PUBLIC_MEMBER)

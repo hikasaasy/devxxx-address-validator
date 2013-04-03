@@ -1,4 +1,4 @@
-package sfdc.cdev.webservices;
+package com.salesforce.cdev.webservices.common;
 
 import java.util.List;
 

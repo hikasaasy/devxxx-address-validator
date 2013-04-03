@@ -1,4 +1,4 @@
-package sfdc.cdev.webservices;
+package com.salesforce.cdev.webservices.common;
 
 public class Address implements IAddress {
 	private String line1;

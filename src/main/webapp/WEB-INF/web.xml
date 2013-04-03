@@ -1,7 +1,7 @@
 <web-app id="WebApp_ID">
 	<display-name>Restful Web Application</display-name>
 
-<!-- REST -->
+	<!-- REST -->
 	<listener>
 		<listener-class>org.jboss.resteasy.plugins.server.servlet.ResteasyBootstrap</listener-class>
 	</listener>
@@ -11,26 +11,27 @@
 	</servlet>
 	<context-param>
 		<param-name>resteasy.resources</param-name>
-		<param-value>sfdc.cdev.webservices.RESTService</param-value>
+		<param-value>com.salesforce.cdev.webservices.REST.Service</param-value>
 	</context-param>
 	<servlet-mapping>
 		<servlet-name>resteasy-servlet</servlet-name>
 		<url-pattern>/rest/*</url-pattern>
 	</servlet-mapping>
 
-
-
-<!-- SOAP -->
+	<!-- SOAP -->
 	<listener>
 		<listener-class>com.sun.xml.ws.transport.http.servlet.WSServletContextListener</listener-class>
 	</listener>
 	<servlet>
-          <servlet-name>jaxws</servlet-name>
-          <servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
-      </servlet>
-      <servlet-mapping>
-          <servlet-name>jaxws</servlet-name>
-          <url-pattern>/soap</url-pattern>
-      </servlet-mapping>
-	
+		<servlet-name>jaxws</servlet-name>
+		<servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>jaxws</servlet-name>
+		<url-pattern>/soap/multipleMessages</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>jaxws</servlet-name>
+		<url-pattern>/soap/validateAddresses</url-pattern>
+	</servlet-mapping>
 </web-app>
