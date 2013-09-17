@@ -8,6 +8,7 @@ import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
+import javax.ws.rs.core.Request;
 
 @Path("/rest")
 public class Service {
@@ -25,6 +26,18 @@ public class Service {
 	@Consumes("application/json")
 	@Produces("application/json")
 	public List<ValidationResultREST> validateMultipleAddress(List<AddressREST> multipleAddresses) {
+		List<ValidationResultREST> output = new ArrayList<ValidationResultREST>();
+		for (AddressREST address : multipleAddresses) {
+			output.add(new ValidationResultREST(address));
+		}
+		return output;
+	}
+
+	@POST
+	@Path("/testValidation")
+	@Consumes("application/json")
+	@Produces("application/json")
+	public List<ValidationResultREST> testValidation(List<AddressREST> multipleAddresses) {
 		List<ValidationResultREST> output = new ArrayList<ValidationResultREST>();
 		for (AddressREST address : multipleAddresses) {
 			output.add(new ValidationResultREST(address));
